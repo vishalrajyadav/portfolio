@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.main{
+    display: flex;
+    
+}
+.menu{  
+    width: 250px;
+        
+    background-color: black;
+    width: 17%;
+    height: 100vh;
+    position: fixed;
+}
+.content{
+    transition: background-image 0.8s ease, background-position 0.5s ease;
+    background-color: aqua;
+    width: 83%;
+    height: 100vh;
+    background-image: url(mine.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 230px;
+    
+}
+.logo{
+    margin-top: 40px;
+   margin-left: 40px;
+    width: 140px;
+    height: 140px;
+    background-color: blue;
+    border-radius: 50%;
+    overflow: hidden;
+   
+  
+}
+.img{
+    width: 100%;
+    height: 100%;
+    background-image: url(myphoto5.jfif);
+    
+    background-size: cover;
+    border-radius: 50%;
+    transition: 1s ease-in
+    
+}
+.img:hover{
+   transform: scale(1.3);
+}
+.name{
+    margin-left: 40px;
+    width: 140px;
+    height: 40px;
+   display: flex;
+   justify-content: center;
+}
+.link{
+    margin-left: 40px;
+    width:140px ;
+    height: 40px;
+    background-color: aqua;
+}
+
+.section{
+    margin-top: 60px;
+    width:140px ;
+    height: 350px;
+    
+    margin-left: 35px
+}
+h1,h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+    color: rgb(231, 222, 222);
+    text-shadow: 8px 9px 9px black;
+    
+   
+}
+.title:hover{
+    box-shadow: 10px 15px 8px black;
+    border-radius: 20px;
+}
+.content button{
+    background: #010101;
+    width: 70px;
+    border-radius: 10px;
+    margin-left: 91%;
+}
+
+
+.title{
+    transition: 1s;
+    margin-top: 300px;
+    margin-left: 60px;
+  
+    display: inline-block;
+    color: rgb(230, 228, 228);
+    background: linear-gradient(to right, #010101, #868c86, #cacdca);
+   
+    animation: windBlow 3.8s infinite alternate;
+    background-size: 200% 100%; /* Double the width for the animation */
+
+}
+@keyframes windBlow {
+    0% {
+        background-position: 0% 50%;
+        transform: scale(1.2);
+        border-radius: 40px;
+        box-shadow: 10px 14px 8px black;
+        opacity: 0.8;
+    }
+    100% {
+        background-position: 100% 50%;
+        transform: scale(0.8);
+        transform: translate(180px,100px,90px);
+        border-radius: 0px;
+        box-shadow: 12px 14px 8px black;
+        opacity: 0;
+
+    }
+}
+input,textarea{
+    color: #010101;
+}
+#fb a,#insta a{
+    align-items: center;
+    color:black;
+    text-decoration: none;
+    
+}
+span{
+    margin-left: 85px;
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+}
+.qualification{
+    width:100%;
+    height: 100vh;
+   display: flex;
+   justify-content:center ;
+   align-items: center;
+   margin-top: 40px;
+    
+   
+  background: linear-gradient(rgb(0, 0, 0),rgb(20, 20, 20),rgb(61, 59, 59),rgb(86, 85, 85));
+ 
+   background-size: cover;
+   background-repeat: no-repeat;
+    
+}
+#fb{
+    
+    height: 80px;
+    background-color: transparent;
+    background-image: url(FB.png);
+    filter: grayscale();
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#insta{
+    height: 10px ;
+    background-color:transparent;
+    background-image: url(insta_logo.jfif);
+    filter:grayscale();
+    background-size: contain;
+
+}
+.skills{
+    width: 600px;
+    height:300px ;
+   
+    padding-top: 50px;
+  
+
+}
+.table2{
+    transition: 0.8s;
+}
+.table2:hover{
+    box-shadow: 20px 15px 10px rgb(21, 21, 21);
+   border-radius: 20px;
+}
+
+
+.skills td{
+    height: 150px;
+    width: 200px;
+   
+}
+
+#c{
+    background-image: url(clanguage.jfif);
+    background-size: cover;
+    background-position: 10px;
+    transition: 1.3s ease-in;
+
+   
+}
+#java{
+    background-image: url(javaimg.webp);
+    background-size: cover;
+    transition: 1.3s ease-in;
+}
+#python{
+    background-image: url(pythonimg.webp);
+    background-size: cover;
+    transition: 1.3s ease-in;
+}
+#web{
+    background-image: url(webimage.jpg);
+    background-size: cover;
+    transition: 1.3s ease-in;
+}
+#Editing{
+    background-image: url(editor.png);
+    background-size: cover;
+    transition: 1.3s ease-in;
+}
+#Speaker{
+    background-image: url(speakerimg.jpg);
+    background-size: cover;
+    transition: 1.3s ease-in;
+}
+#level p{
+    color: transparent;
+    font-size: medium;
+}
+#level{
+    display: flex;
+    justify-content: end;
+    width: 30px;
+    color: white;
+    background-color: rgb(182, 13, 13);
+    height: 15px;
+    border-radius: 20px;
+   
+    transition: 0.8s;
+    font-weight: 100;
+}
+#level:hover{
+   background: linear-gradient(to right , rgb(255, 0, 0),rgb(177, 25, 25),rgb(141, 60, 60),rgb(141, 82, 82));
+    width: 140px;
+    font-weight: 100;
+    box-shadow: 19px 10px 9px black;
+    
+}
+#level:hover p{
+    color: white;
+}
+.table3 td{
+    width: 150px;
+    height: 60px;
+    
+}
+#c:hover{
+  
+    transform: rotateZ(360deg);
+    scale: 1.7;
+    border-radius: 50%;
+    box-shadow: 15px 19px 10px black;
+}
+#java:hover{
+    transform: rotateZ(360deg);
+    scale: 1.7;
+    border-radius: 50%;
+    box-shadow: 15px 19px 10px black;
+}
+#python:hover{
+    transform: rotateZ(360deg);
+    scale: 1.7;
+    border-radius: 50%;
+    box-shadow: 15px 19px 10px black;
+}
+#web:hover{
+    transform: rotateZ(360deg);
+    scale: 1.7;
+    border-radius: 50%;
+    box-shadow: 15px 19px 10px black;
+}
+#Editing:hover{
+    transform: rotateZ(360deg);
+    scale: 1.7;
+    border-radius: 50%;
+    box-shadow: 15px 19px 10px black;
+}
+#Speaker:hover{
+    transform: rotateZ(360deg);
+    scale: 1.7;
+    border-radius: 50%;
+    box-shadow: 15px 19px 10px black;
+}
+.title h1,h2{
+    color: red;
+}
+#head{
+    display:flex ;
+    justify-content: center;
+    background-color: blue;
+    height: 20px;
+    
+   
+}
+.contact{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(86, 85, 85),rgb(61, 59, 59),rgb(20, 20, 20),rgb(0, 0, 0));
+}
+input{
+    border-radius: 4px;
+    height: 25px;
+    box-shadow: 18px 14px 10px black;
+}
+::placeholder{
+    color: black;
+    font-weight: 600;
+}
+textarea{
+    box-shadow: 20px 30px 10px black;
+}
+button{
+    width: 100%;
+    height: 40px;
+    color: white;
+   background: linear-gradient(to right,red,rgb(197, 26, 26),rgb(132, 41, 41),rgb(150, 96, 96),rgb(83, 62, 62));
+}
+a {
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Required for positioning the underline */
+    color: #ffffff; /* Link color */
+}
+
+/* Create an underline */
+a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 4px; /* Underline thickness */
+    background-color: #ffffff; /* Underline color */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Transition effect for width */
+}
+
+/* Change the underline width on hover */
+a:hover::before {
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 480px) {
+    /* Responsive CSS for mobile screens */
+    .main {
+        flex-direction: column-reverse;
+    }
+    .menu {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+    .title {
+        margin-top: 0;
+    }
+    .menu, .section {
+        text-align: center;
+    }
+    .menu .section {
+        margin-top: 20px;
+    }
+    .content button {
+        margin-left: 0;
+    }
+    .qualification {
+        padding: 20px;
+    }
+    .skills {
+        width: 100%;
+        text-align: center;
+    }
+    .table2 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .skills td {
+        width: 33.33%;
+        height: auto;
+        padding: 10px;
+    }
+    .table3 td {
+        width: 33.33%;
+        height: auto;
+        padding: 10px;
+    }
+}
